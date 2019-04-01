@@ -1,10 +1,11 @@
 # open-API-in-r
+<!doctype html>
 <html>
-  <head>
-<h1>R을 활용하여 오픈 API자료를 읽어오기</h1>
-  </head>
 <body>
-  <p>
+<h1>R을 활용하여 오픈 API자료를 읽어오기</h1>
+
+
+<p>
 #install.packages("rvest")
 library(rvest)
 
@@ -12,31 +13,31 @@ api='http://apis.data.go.kr/1192000/openapi/service/ManageExpItemService/getExpI
 
 <p>
 html_api=read_html(api,encoding = "UTF-8")<br>
-###기준 년월
-ymd=html_api %>% html_nodes("item") %>% html_node('stdyymm') %>%html_text()
-###수산물 수출입품목코드
-code1=html_api %>% html_nodes("item") %>% html_node('mprcexipitmcode') %>%html_text()
-###수출입 구분코드
-code2=html_api %>% html_nodes("item") %>% html_node('imxprtsecode') %>%html_text()
-###수산물 수출입품목명
-name1=html_api %>% html_nodes("item") %>% html_node('mprcexipitmnm') %>%html_text()
-###수출입 구분명
-name2=html_api %>% html_nodes("item") %>% html_node('imxprtsenm') %>%html_text()
-###수산물 수출입품목 대분류코드
-lcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmlclascode') %>%html_text()   
-###수산물 수출입품목 중분류코드
-mcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmmlsfccode') %>%html_text()
-###수산물 수출입품목 소분류코드
-scls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmsclascode') %>%html_text()   
-###수산물 수출입품목 세분류코드
-dcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmdtlclfccode') %>%html_text()   
-###수산물 수출입품목 순번
-sn=html_api %>% html_nodes("item") %>% html_node('mprcexipitmsn') %>%html_text()
-###수출입 중량
-wgt=html_api %>% html_nodes("item") %>% html_node('imxprtwt') %>%html_text()
-###수출입 미화금액
-dollar=html_api %>% html_nodes("item") %>% html_node('imxprtdollaramount') %>%html_text()
-db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)
+###기준 년월<br>
+ymd=html_api %>% html_nodes("item") %>% html_node('stdyymm') %>%html_text()<br>
+###수산물 수출입품목코드<br>
+code1=html_api %>% html_nodes("item") %>% html_node('mprcexipitmcode') %>%html_text()<br>
+###수출입 구분코드<br>
+code2=html_api %>% html_nodes("item") %>% html_node('imxprtsecode') %>%html_text()<br>
+###수산물 수출입품목명<br>
+name1=html_api %>% html_nodes("item") %>% html_node('mprcexipitmnm') %>%html_text()<br>
+###수출입 구분명<br>
+name2=html_api %>% html_nodes("item") %>% html_node('imxprtsenm') %>%html_text()<br>
+###수산물 수출입품목 대분류코드<br>
+lcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmlclascode') %>%html_text()<br>   
+###수산물 수출입품목 중분류코드<br>
+mcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmmlsfccode') %>%html_text()<br>
+###수산물 수출입품목 소분류코드<br>
+scls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmsclascode') %>%html_text()<br>   
+###수산물 수출입품목 세분류코드<br>
+dcls=html_api %>% html_nodes("item") %>% html_node('mprcexipitmdtlclfccode') %>%html_text()<br>   
+###수산물 수출입품목 순번<br>
+sn=html_api %>% html_nodes("item") %>% html_node('mprcexipitmsn') %>%html_text()<br>
+###수출입 중량<br>
+wgt=html_api %>% html_nodes("item") %>% html_node('imxprtwt') %>%html_text()<br>
+###수출입 미화금액<br>
+dollar=html_api %>% html_nodes("item") %>% html_node('imxprtdollaramount') %>%html_text()<br>
+db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)<br>
   </p>
 </body>
 <br>
