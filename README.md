@@ -3,7 +3,7 @@
 <html>
 <body>
 <h1>R을 활용하여 오픈 API자료를 읽어오기(연습)</h1>
-  많고 많은 자료들중에 '수산물 수출입 현황' 한번 읽어와 보겠습니다.<br>
+  많고 많은 자료들중에 '수산물 수출입 현황' 데이터를 사용합니다.<br>
   
   ![1](https://user-images.githubusercontent.com/49007889/55310216-debaed80-549a-11e9-9c04-4cad500d5a5c.PNG)
   
@@ -20,7 +20,7 @@
   
   ![5](https://user-images.githubusercontent.com/49007889/55310842-69501c80-549c-11e9-9562-8720e0ce0377.PNG)
   
-  이제 이 정보를 R을 이용해 읽어오겠습니다.<br>
+  이제 이 정보를 R을 이용해 읽어옵니다.<br>
 
 
 <h3>R-code</h3>
@@ -59,9 +59,10 @@ dollar=html_api %>% html_nodes("item") %>% html_node('imxprtdollaramount') %>%ht
 db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)<br>
   </p>
 </body>
-<br>
+
 실행결과입니다.
 
 ![캡처](https://user-images.githubusercontent.com/49007889/55308971-3c4d3b00-5497-11e9-97b4-543533dc09d8.PNG)
+
 
 </html>
