@@ -8,8 +8,9 @@
   ![1](https://user-images.githubusercontent.com/49007889/55310216-debaed80-549a-11e9-9c04-4cad500d5a5c.PNG)
   
   ![2](https://user-images.githubusercontent.com/49007889/55310227-e5e1fb80-549a-11e9-9d61-24c9b0417c04.PNG)
-
-
+  
+  open API활용 가이드를 다운로드합니다.<br>
+  가이드 파일을 보면 요청/응답 메세지 예제가 존재합니다. 예제대로 실행해 봅시다.<br>
 
 <p>
 #install.packages("rvest")
