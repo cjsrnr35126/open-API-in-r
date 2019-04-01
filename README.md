@@ -23,7 +23,7 @@
   이제 이 정보를 R을 이용해 읽어오겠습니다.<br>
 
 
-<h3>R-code<h3>
+<h3>R-code</h3>
 <p>
 #install.packages("rvest")
 library(rvest)
