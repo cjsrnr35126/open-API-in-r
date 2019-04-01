@@ -38,5 +38,5 @@ db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)
 </body>
 <br>
 실행결과
-<br>
+
 ![캡처](https://user-images.githubusercontent.com/49007889/55308971-3c4d3b00-5497-11e9-97b4-543533dc09d8.PNG)
