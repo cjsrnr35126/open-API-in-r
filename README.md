@@ -5,6 +5,10 @@
 <h1>R을 활용하여 오픈 API자료를 읽어오기</h1>
   많고 많은 자료들중에 '수산물 수출입 현황' 한번 읽어와 보겠습니다.<br>
   
+  ![1](https://user-images.githubusercontent.com/49007889/55310216-debaed80-549a-11e9-9c04-4cad500d5a5c.PNG)
+  
+  ![2](https://user-images.githubusercontent.com/49007889/55310227-e5e1fb80-549a-11e9-9d61-24c9b0417c04.PNG)
+
 
 
 <p>
