@@ -3,24 +3,24 @@
 <html>
 <body>
 <h1>R을 활용하여 오픈 API자료를 읽어오기(연습)</h1>
-  많고 많은 자료들중에 '수산물 수출입 현황' 데이터를 사용합니다.<br>
+  많고 많은 자료들중에 '수산물 수출입 현황' 데이터를 사용.<br>
   
   ![1](https://user-images.githubusercontent.com/49007889/55310216-debaed80-549a-11e9-9c04-4cad500d5a5c.PNG)
   
   ![2](https://user-images.githubusercontent.com/49007889/55310227-e5e1fb80-549a-11e9-9d61-24c9b0417c04.PNG)
   
   open API활용 가이드를 다운로드합니다.<br>
-  가이드 파일을 보면 요청/응답 메세지 예제가 존재합니다. 예제대로 실행해 봅시다.<br>
+  가이드 파일을 보면 요청/응답 메세지 예제가 존재합니다. 예제 그대로 실행.<br>
   
   ![3](https://user-images.githubusercontent.com/49007889/55310523-93550f00-549b-11e9-8ca3-ff6341d2acb1.PNG)
   
   ![4](https://user-images.githubusercontent.com/49007889/55310836-66edc280-549c-11e9-92f8-813dd57fb99e.PNG)
   
-  무엇이 문제일까요. 다시 가이드파일을 살펴보고 난 후 2016년10월 자료를 요청하는 &baseDt=201610을 url에 추가했습니다.<br>
+  필수 파라미터? 다시 가이드파일을 살펴보고 난 후 2016년10월 자료를 요청하는 &baseDt=201610을 url에 추가.<br>
   
   ![5](https://user-images.githubusercontent.com/49007889/55310842-69501c80-549c-11e9-9562-8720e0ce0377.PNG)
   
-  이제 이 정보를 R을 이용해 읽어옵니다.<br>
+  이제 이 정보를 R을 이용해 읽어옴.<br>
 
 
 <h3>R-code</h3>
@@ -60,7 +60,7 @@ db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)<br>
   </p>
 </body>
 
-실행결과입니다.
+실행결과
 
 ![캡처](https://user-images.githubusercontent.com/49007889/55308971-3c4d3b00-5497-11e9-97b4-543533dc09d8.PNG)
 
