@@ -1,8 +1,10 @@
 # open-API-in-r
-<!doctype html>
+
 <html>
 <body>
 <h1>R을 활용하여 오픈 API자료를 읽어오기</h1>
+  <p>어제 TV를 보다가 후쿠시마산 수산물이 수입될 수도 있다는 뉴스를 접했습니다. 정말 걱정이됩니다.
+    그래서 많고 많은 자료들중에 '수산물 수출입 현황'한번 읽어와 보겠습니다.</p>
 
 
 <p>
@@ -41,7 +43,7 @@ db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)<br>
   </p>
 </body>
 <br>
-실행결과
+실행결과입니다.
 
 ![캡처](https://user-images.githubusercontent.com/49007889/55308971-3c4d3b00-5497-11e9-97b4-543533dc09d8.PNG)
 
