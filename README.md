@@ -2,13 +2,14 @@
 
 <h1>R을 활용하여 오픈 API자료를 읽어오기</h1>
 
-<p>#install.packages("rvest")
+<body>
+#install.packages("rvest")
 library(rvest)
 
 api='http://apis.data.go.kr/1192000/openapi/service/ManageExpItemService/getExpItemList?ServiceKey=zBvSB3b0iaKU6E%2FCcG9KIhWWbKuNSdtsa9n5NT1Z4r826u4nUxM2B5CUEKrVl83LkKBIkldFK8snLlWXWYa9oQ%3D%3D&pageNo=1&numOfRows=10&type=xml&baseDt=201610'
 
 
-html_api=read_html(api,encoding = "UTF-8")
+html_api=read_html(api,encoding = "UTF-8")<br>
 ###기준 년월
 ymd=html_api %>% html_nodes("item") %>% html_node('stdyymm') %>%html_text()
 ###수산물 수출입품목코드
@@ -34,7 +35,7 @@ wgt=html_api %>% html_nodes("item") %>% html_node('imxprtwt') %>%html_text()
 ###수출입 미화금액
 dollar=html_api %>% html_nodes("item") %>% html_node('imxprtdollaramount') %>%html_text()
 db=data.frame(ymd,code1,code2,name1,name2,wgt,dollar)
-</p>
+</body>
 <br>
 실행결과
 <br>
