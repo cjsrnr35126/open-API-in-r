@@ -11,6 +11,11 @@
   
   open API활용 가이드를 다운로드합니다.<br>
   가이드 파일을 보면 요청/응답 메세지 예제가 존재합니다. 예제대로 실행해 봅시다.<br>
+  
+  ![3](https://user-images.githubusercontent.com/49007889/55310523-93550f00-549b-11e9-8ca3-ff6341d2acb1.PNG)
+  
+  
+
 
 <p>
 #install.packages("rvest")
